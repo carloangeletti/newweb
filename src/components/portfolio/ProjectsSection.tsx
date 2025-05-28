@@ -30,7 +30,7 @@ const projects = [
       "Documentazione tecnica e guida all’aggiornamento dei contenuti"
     ],
     tech: ["Wordpress", "Woocommerce", "EasyPanel", "CloudPanel", "Cloudflare", "DigitalOcean", "n8n", "Activepieces", "Chatwoot", "OpenAI", "SwiftOS"],
-    // github: "https://github.com",
+    github: "https://github.com",
     live: "https://viviponza.com",
     gradient: "from-blue-500 to-cyan-500",
     status: "Live",
@@ -269,13 +269,15 @@ export default function ProjectsSection() {
 
                     {/* Action Buttons */}
                     <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
-                      {/*<Link*/}
-                      {/*  href={project.github}*/}
-                      {/*  className="flex items-center justify-center gap-2 md:gap-3 px-4 py-2.5 md:px-6 md:py-3 bg-white/20 backdrop-blur-sm border border-white/30 text-white rounded-lg md:rounded-xl hover:bg-white/30 transition-all duration-300 text-sm font-medium shadow-lg hover:shadow-xl active:scale-95"*/}
-                      {/*>*/}
-                      {/*  <Icon icon="solar:code-bold" width={18} height={18} className="md:w-5 md:h-5" />*/}
-                      {/*  <span>View Repository</span>*/}
-                      {/*</Link>*/}
+                      {project.title !== "Vivi Ponza" && (
+                          <Link
+                              href={project.github}
+                              className="flex items-center justify-center gap-2 md:gap-3 px-4 py-2.5 md:px-6 md:py-3 bg-white/20 backdrop-blur-sm border border-white/30 text-white rounded-lg md:rounded-xl hover:bg-white/30 transition-all duration-300 text-sm font-medium shadow-lg hover:shadow-xl active:scale-95"
+                          >
+                            <Icon icon="solar:code-bold" width={18} height={18} className="md:w-5 md:h-5" />
+                            <span>View Repository</span>
+                          </Link>
+                      )}
 
                       <Link
                         href={project.live}
