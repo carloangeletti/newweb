@@ -6,36 +6,52 @@ import SectionHeader from "./SectionHeader";
 
 const experience = [
   {
-    role: "Software Developer",
-    company: "Upwork",
-    period: "January 2020 — Present",
-    type: "Freelance",
-    companyIcon: "fa6-brands:square-upwork",
+    role: "Senior Developer",
+    company: "Humans",
+    period: "2015 — Present",
+    type: "Full-time",
+    companyIcon: "mdi:home",
     companyColor: "from-green-500 to-green-600",
-    description: "Delivered high-quality projects across diverse domains, including web and mobile applications, API development, and cloud integrations (AWS, GCP).",
+    description: "In Humans.tech contribuisco quotidianamento allo sviluppo di soluzioni digitali orientate all’efficienza e all’automazione, lavorando all'ottimizzazione del business.",
     achievements: [
-      "Achieved Top-Rated status with a 91% job success score",
-      "Completed 10+ projects focusing on scalable solutions",
-      "Consistently praised for skillfulness, quick learning, and strong communication",
-      "Earned repeated engagements through reliability and expertise"
+      "Sviluppo di soluzioni digitali scalabili per clienti B2B e B2C",
+      "Ottimizzazione dei flussi interni tramite automazioni e strumenti cloud",
+      "Collaborazione cross-team tra sviluppo, design e business",
+      "Contributo attivo alla crescita di prodotti digitali proprietari"
     ],
-    technologies: ["JavaScript", "Python", "Node.js", "AWS", "GCP", "OpenAI API", "LangChain"]
+    technologies: ["Wordpress", "DigitalOcean", "Seeweb", "AWS", "GCP", "OpenAI API", "CloudPanel", "Plesk", "Agile Workflow", "Cross-Team Collaboration", "Problem Solving", "Business-Oriented Development"]
   },
   {
-    role: "HIMS Master Trainer / PACS Specialist",
-    company: "Public Health Organization, Islamabad",
-    period: "July 2019 — Present",
+    role: "Co-founder / Web Developer",
+    company: "IT Creations",
+    period: "2012 — 2015",
     type: "Full-time",
     companyColor: "from-blue-500 to-blue-600",
-    companyIcon: "mdi:hospital-building",
-    description: "Spearheaded organizational transformation from paper-based manual systems to completely integrated HIMS and PACS (Picture Archiving and Communication System).",
+    companyIcon: "mdi:web",
+    description: "In IT Creations abbiamo creato un gruppo di professionisti freelance, ognuno con competenze specifiche, per collaborare su progetti digitali in modo coordinato ma indipendente. Un’esperienza preziosa che mi ha permesso di crescere sia come sviluppatore che come collaboratore in team multidisciplinari.",
     achievements: [
-      "Led integration of 45+ radiology machines (CT, MRI, X-Ray, Ultrasound)",
-      "Ensured active monitoring for integration issues",
-      "Acted as master trainer and led support team",
-      "Communicated issues and requirements to backend teams"
+      "Collaborazione in team cross-disciplinare su progetti digitali",
+      "Gestione autonoma di progetti",
+      "Sviluppo di siti web e applicazioni personalizzate",
+      "Esperienza diretta nella relazione con i clienti"
     ],
-    technologies: ["HIMS", "PACS", "System Integration", "Healthcare IT", "Training & Support"]
+    technologies: ["WordPress", "HTML", "CSS", "JavaScript", "PHP", "UI/UX Design", "Git", "Project Management", "Client Communication", "Team Collaboration", "Problem Solving", "Custom Theme Development", "Freelance Workflow", "Task Coordination", "Requirement Analysis"]
+  },
+  {
+    role: "Freelance",
+    company: "Carlo Angeletti - Freelance",
+    period: "2010 — 2015",
+    type: "Freelance",
+    companyColor: "from-blue-500 to-blue-600",
+    companyIcon: "mdi:web",
+    description: "Ho iniziato la mia carriera come freelance, lavorando direttamente con piccoli clienti e attività locali. È stato un periodo formativo in cui ho imparato a gestire progetti end-to-end, unendo sviluppo, design e relazione diretta con il cliente",
+    achievements: [
+      "Realizzazione di siti web su misura per liberi professionisti e piccole imprese",
+      "Gestione autonoma dell’intero ciclo di progetto",
+      "Sviluppo delle prime competenze in UI/UX e SEO base",
+      "Costruzione di un metodo di lavoro personale, efficace e flessibile"
+    ],
+    technologies: ["HTML", "CSS", "JavaScript", "PHP", "WordPress", "UI/UX Design", "Basic SEO", "Client Management", "Project Estimation", "Time Management", "Self-Learning", "Problem Solving", "Responsive Design", "Website Optimization", "Freelance Workflow", "Basic Hosting Management"]
   }
 ];
 
@@ -95,11 +111,11 @@ export default function ExperienceSection() {
 
       <div className="relative z-10">
         <SectionHeader
-          tagText="Professional Journey"
+          tagText="Percorso Professionale"
           tagIcon="solar:case-bold"
-          heading="Experience"
+          heading="Esperienze"
           showUnderline={false}
-          description="My professional journey and the impact I've made across different domains"
+          description="Esperienza trasversale tra sviluppo, design e infrastrutture digitali"
           centered={true}
         />
 
@@ -187,7 +203,7 @@ export default function ExperienceSection() {
                   >
                     <h4 className="text-base md:text-lg font-bold text-gray-800 dark:text-gray-200 flex items-center gap-2">
                       <Icon icon="solar:cup-star-bold" className="text-amber-500" width={22} height={22} />
-                      Key Achievements
+                      Risultati chiave
                     </h4>
 
                     <div className="space-y-2 md:space-y-3">
@@ -219,7 +235,7 @@ export default function ExperienceSection() {
                   >
                     <h4 className="text-base md:text-lg font-bold text-gray-800 dark:text-gray-200 flex items-center gap-2">
                       <Icon icon="solar:programming-bold" className="text-purple-500" width={18} height={18} />
-                      Technologies & Skills
+                      Tecnologie e Skills
                     </h4>
 
                     <div className="flex flex-wrap gap-2 md:gap-3">
@@ -266,24 +282,24 @@ export default function ExperienceSection() {
               whileHover={{ scale: 1.05, y: -5 }}
               className="group p-6 md:p-8 rounded-xl md:rounded-2xl bg-gradient-to-br from-blue-50/50 to-blue-100/30 dark:from-blue-950/20 dark:to-blue-900/10 border border-blue-200/30 dark:border-blue-800/20 hover:border-blue-300/50 dark:hover:border-blue-600/30 transition-all duration-500"
             >
-              <div className="text-4xl md:text-5xl font-bold text-blue-600 dark:text-blue-400 mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">5+</div>
-              <div className="text-gray-600 dark:text-gray-400 font-medium text-base md:text-lg">Years Experience</div>
+              <div className="text-4xl md:text-5xl font-bold text-blue-600 dark:text-blue-400 mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">15+</div>
+              <div className="text-gray-600 dark:text-gray-400 font-medium text-base md:text-lg">Anni di esperienza</div>
             </motion.div>
 
             <motion.div
               whileHover={{ scale: 1.05, y: -5 }}
               className="group p-6 md:p-8 rounded-xl md:rounded-2xl bg-gradient-to-br from-green-50/50 to-green-100/30 dark:from-green-950/20 dark:to-green-900/10 border border-green-200/30 dark:border-green-800/20 hover:border-green-300/50 dark:hover:border-green-600/30 transition-all duration-500"
             >
-              <div className="text-4xl md:text-5xl font-bold text-green-600 dark:text-green-400 mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">50+</div>
-              <div className="text-gray-600 dark:text-gray-400 font-medium text-base md:text-lg">Projects Completed</div>
+              <div className="text-4xl md:text-5xl font-bold text-green-600 dark:text-green-400 mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">100+</div>
+              <div className="text-gray-600 dark:text-gray-400 font-medium text-base md:text-lg">Progetti Completati</div>
             </motion.div>
 
             <motion.div
               whileHover={{ scale: 1.05, y: -5 }}
               className="group p-6 md:p-8 rounded-xl md:rounded-2xl bg-gradient-to-br from-purple-50/50 to-purple-100/30 dark:from-purple-950/20 dark:to-purple-900/10 border border-purple-200/30 dark:border-purple-800/20 hover:border-purple-300/50 dark:hover:border-purple-600/30 transition-all duration-500 sm:col-span-2 lg:col-span-1"
             >
-              <div className="text-4xl md:text-5xl font-bold text-purple-600 dark:text-purple-400 mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">91%</div>
-              <div className="text-gray-600 dark:text-gray-400 font-medium text-base md:text-lg">Success Rate</div>
+              <div className="text-4xl md:text-5xl font-bold text-purple-600 dark:text-purple-400 mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">+5</div>
+              <div className="text-gray-600 dark:text-gray-400 font-medium text-base md:text-lg">Competenze chiave tra sviluppo, design e cloud</div>
             </motion.div>
           </div>
         </motion.div>

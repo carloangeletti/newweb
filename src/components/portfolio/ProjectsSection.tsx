@@ -7,73 +7,73 @@ import SectionHeader from "./SectionHeader";
 
 const projects = [
   {
-    title: "Checkersvip.com",
-    subtitle: "Professional Online Checkers Platform",
-    description: "A comprehensive multiplayer American checkers platform designed for competitive play with real-time communication capabilities. Currently undergoing official recognition process with the American Checkers Federation (ACF).",
+    title: "Vivi Ponza",
+    subtitle: "Portale turistico e guida digitale di Ponza",
+    description: "Il progetto Vivi Ponza© nasce con l’obiettivo di diventare il portale informativo di riferimento per il turismo a Ponza. Vogliamo offrire un servizio digitale innovativo e completamente gratuito, capace di mettere in contatto il turista con tutte le realtà locali presenti sull’isola.",
     features: [
-      "Real-time multiplayer gameplay with WebSocket technology",
-      "Advanced drag-and-drop game mechanics using DnDKit",
-      "Live chat system with emoji support and moderation",
-      "Player ranking and tournament management system",
-      "Spectator mode with real-time game observation",
-      "Mobile-responsive design for cross-platform play",
-      "Game replay and analysis tools",
-      "Social features including friend lists and challenges"
+      "Portale informativo completo su Ponza",
+      "Integrazione con app mobile (iOS e Android)",
+      "Sezioni dinamiche per spiagge, eventi, strutture e servizi",
+      "Ottimizzazione mobile-first e UX intuitiva per turisti",
+      "Sistema di ricerca e filtri avanzati per attività e strutture",
+      "Backend semplificato per la redazione di contenuti locali",
+      "Performance ottimizzata per connessioni lente",
+      "Portale community"
     ],
     deliverables: [
-      "Fully functional web application deployed on production",
-      "Real-time multiplayer game engine",
-      "User authentication and profile management",
-      "Admin dashboard for game moderation",
-      "Tournament management system",
-      "Mobile-optimized responsive interface",
-      "Integration with payment systems for premium features"
+      "Sito web responsive sviluppato in WordPress",
+      "Design completo e adattivo per desktop e mobile",
+      "Struttura CMS personalizzata per la gestione autonoma dei contenuti",
+      "Template su misura per categorie e località dell’isola",
+      "Ottimizzazione delle prestazioni",
+      "Configurazione di strumenti per il monitoraggio",
+      "Documentazione tecnica e guida all’aggiornamento dei contenuti"
     ],
-    tech: ["Next.js", "NextUI", "Tailwind CSS", "DnDKit", "Fastify", "Redis", "Socket.io", "PostgreSQL", "Prisma", "JWT Authentication", "Stripe API"],
-    github: "https://github.com",
-    live: "https://checkersvip.com",
+    tech: ["Wordpress", "Woocommerce", "EasyPanel", "CloudPanel", "Cloudflare", "DigitalOcean", "n8n", "Activepieces", "Chatwoot", "OpenAI", "SwiftOS"],
+    // github: "https://github.com",
+    live: "https://viviponza.com",
     gradient: "from-blue-500 to-cyan-500",
     status: "Live",
-    category: "Web Application",
+    category: "Web + App Mobile",
     highlight: "Featured",
-    timeline: "6 months",
-    clientType: "Gaming Industry"
+    timeline: "In corso",
+    clientType: "Turismo"
   },
-  {
-    title: "AskRudy.ai",
-    subtitle: "AI-Powered Document Intelligence Platform",
-    description: "An advanced RAG-based AI chatbot that revolutionizes document interaction through multilingual translation and intelligent conversation capabilities. Features cutting-edge OpenAI multimodal technology for screenshot analysis and real-time text translation.",
-    features: [
-      "RAG (Retrieval-Augmented Generation) architecture for accurate responses",
-      "Multi-format document support (PDF, DOCX, TXT, images)",
-      "OpenAI GPT-4 Vision integration for screenshot analysis",
-      "Real-time multilingual translation (50+ languages)",
-      "Intelligent document chunking and vector embeddings",
-      "Conversational AI with context-aware responses",
-      "Document highlighting and annotation tools",
-      "Export capabilities for translations and summaries",
-      "Collaborative workspace for team document analysis"
-    ],
-    deliverables: [
-      "Production-ready AI chatbot platform",
-      "Document processing pipeline with OCR capabilities",
-      "Multi-language translation engine",
-      "User dashboard with document management",
-      "Subscription management with Stripe integration",
-      "API documentation and integration guides",
-      "Mobile-responsive Progressive Web App",
-      "Analytics dashboard for usage tracking"
-    ],
-    tech: ["Next.js", "NextUI", "Vercel AI SDK", "React-PDF", "Firebase", "LangChain", "OpenAI GPT-4", "Pinecone", "Stripe", "Tesseract.js", "PDF.js", "Zustand"],
-    github: "https://github.com",
-    live: "https://askrudy.ai",
-    gradient: "from-purple-500 to-pink-500",
-    status: "Live",
-    category: "AI Platform",
-    highlight: "Featured",
-    timeline: "8 months",
-    clientType: "EdTech & Enterprise"
-  }
+  // {
+  //   title: "AskRudy.ai",
+  //   subtitle: "AI-Powered Document Intelligence Platform",
+  //   description: "An advanced RAG-based AI chatbot that revolutionizes document interaction through multilingual translation and intelligent conversation capabilities. Features cutting-edge OpenAI multimodal technology for screenshot analysis and real-time text translation.",
+  //   features: [
+  //     "RAG (Retrieval-Augmented Generation) architecture for accurate responses",
+  //     "Multi-format document support (PDF, DOCX, TXT, images)",
+  //     "OpenAI GPT-4 Vision integration for screenshot analysis",
+  //     "Real-time multilingual translation (50+ languages)",
+  //     "Intelligent document chunking and vector embeddings",
+  //     "Conversational AI with context-aware responses",
+  //     "Document highlighting and annotation tools",
+  //     "Export capabilities for translations and summaries",
+  //     "Collaborative workspace for team document analysis"
+  //   ],
+  //   deliverables: [
+  //     "Production-ready AI chatbot platform",
+  //     "Document processing pipeline with OCR capabilities",
+  //     "Multi-language translation engine",
+  //     "User dashboard with document management",
+  //     "Subscription management with Stripe integration",
+  //     "API documentation and integration guides",
+  //     "Mobile-responsive Progressive Web App",
+  //     "Analytics dashboard for usage tracking"
+  //   ],
+  //   tech: ["Next.js", "NextUI", "Vercel AI SDK", "React-PDF", "Firebase", "LangChain", "OpenAI GPT-4", "Pinecone", "Stripe", "Tesseract.js", "PDF.js", "Zustand"],
+  //   github: "https://github.com",
+  //   live: "https://askrudy.ai",
+  //   gradient: "from-purple-500 to-pink-500",
+  //   status: "Live",
+  //   category: "AI Platform",
+  //   highlight: "Featured",
+  //   timeline: "8 months",
+  //   clientType: "EdTech & Enterprise"
+  // }
 ];
 
 export default function ProjectsSection() {
@@ -152,10 +152,10 @@ export default function ProjectsSection() {
       >
         {/* Section Header */}
         <SectionHeader
-          tagText="Portfolio Showcase"
+          tagText="Portfolio"
           tagIcon="solar:code-square-bold"
-          heading="Featured Projects"
-          description="Discover my latest work in web development, AI integration, and digital innovation"
+          heading="Alcuni progetti"
+          description="Selezione di progetti a cui ho lavorato, unendo competenze tecniche e attenzione alle reali esigenze dei clienti"
           showUnderline={true}
           centered={true}
         />
@@ -269,20 +269,21 @@ export default function ProjectsSection() {
 
                     {/* Action Buttons */}
                     <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
-                      <Link
-                        href={project.github}
-                        className="flex items-center justify-center gap-2 md:gap-3 px-4 py-2.5 md:px-6 md:py-3 bg-white/20 backdrop-blur-sm border border-white/30 text-white rounded-lg md:rounded-xl hover:bg-white/30 transition-all duration-300 text-sm font-medium shadow-lg hover:shadow-xl active:scale-95"
-                      >
-                        <Icon icon="solar:code-bold" width={18} height={18} className="md:w-5 md:h-5" />
-                        <span>View Repository</span>
-                      </Link>
+                      {/*<Link*/}
+                      {/*  href={project.github}*/}
+                      {/*  className="flex items-center justify-center gap-2 md:gap-3 px-4 py-2.5 md:px-6 md:py-3 bg-white/20 backdrop-blur-sm border border-white/30 text-white rounded-lg md:rounded-xl hover:bg-white/30 transition-all duration-300 text-sm font-medium shadow-lg hover:shadow-xl active:scale-95"*/}
+                      {/*>*/}
+                      {/*  <Icon icon="solar:code-bold" width={18} height={18} className="md:w-5 md:h-5" />*/}
+                      {/*  <span>View Repository</span>*/}
+                      {/*</Link>*/}
 
                       <Link
                         href={project.live}
                         className="flex items-center justify-center gap-2 md:gap-3 px-4 py-2.5 md:px-6 md:py-3 bg-white text-gray-900 rounded-lg md:rounded-xl hover:bg-gray-100 transition-all duration-300 text-sm font-medium shadow-lg hover:shadow-xl active:scale-95"
+                        target="_blank"
                       >
                         <Icon icon="solar:arrow-up-outline" width={18} height={18} className="md:w-5 md:h-5" />
-                        <span>Live Demo</span>
+                        <span>Guarda online</span>
                       </Link>
                     </div>
                   </div>
@@ -298,7 +299,7 @@ export default function ProjectsSection() {
                         <div className="p-1.5 md:p-2 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg md:rounded-xl">
                           <Icon icon="solar:settings-bold" className="text-white w-[18px] h-[18px] md:w-6 md:h-6" />
                         </div>
-                        <span>Key Features</span>
+                        <span>Funzionalità chiave</span>
                       </h4>
                       <ul className="space-y-2.5 md:space-y-3">
                         {project.features.map((feature, featureIndex) => (
@@ -325,7 +326,7 @@ export default function ProjectsSection() {
                         <div className="p-1.5 md:p-2 bg-gradient-to-r from-green-500 to-emerald-600 rounded-lg md:rounded-xl">
                           <Icon icon="solar:delivery-bold" className="text-white w-[18px] h-[18px] md:w-6 md:h-6" />
                         </div>
-                        <span>Deliverables</span>
+                        <span>Risultati</span>
                       </h4>
                       <ul className="space-y-2.5 md:space-y-3">
                         {project.deliverables.map((deliverable, deliverableIndex) => (
@@ -353,7 +354,7 @@ export default function ProjectsSection() {
                       <div className="p-1.5 md:p-2 bg-gradient-to-r from-purple-500 to-pink-600 rounded-lg md:rounded-xl">
                         <Icon icon="solar:code-bold" className="text-white w-[18px] h-[18px] md:w-6 md:h-6" />
                       </div>
-                      <span>Technology Stack</span>
+                      <span>Stack tecnologico</span>
                     </h4>
                     <div className="flex flex-wrap gap-2 md:gap-3">
                       {project.tech.map((tech, techIndex) => (
@@ -392,7 +393,7 @@ export default function ProjectsSection() {
             >
               <Icon icon="solar:programming-bold" className="text-blue-500 dark:text-purple-400 w-5 h-5 md:w-6 md:h-6" />
               <span className="text-gray-700 dark:text-gray-300 font-medium text-sm md:text-base text-center">
-                Interested in working together? Let&apos;s create something amazing!
+                Sei interessato ad iniziare un progetto? Creiamo qualcosa di fantastico insieme!
               </span>
             </motion.div>
           </Link>

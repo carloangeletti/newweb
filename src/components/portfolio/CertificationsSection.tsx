@@ -26,12 +26,12 @@ const certifications: Certificate[] = [
   {
     title: "DevOps Essentials",
     provider: "IBM",
-    platform: "Coursera",
+    platform: "Udemy",
     issued: "November 2023",
     credentialId: "P67DLWJP2GL7",
     skills: ["Continuous Integration", "DevOps", "Product Development", "IaaC"],
     providerIcon: "lineicons:ibm",
-    platformIcon: "logos:coursera",
+    platformIcon: "logos:udemy",
     color: "from-blue-500 to-blue-600",
     certificatePreview: "/certificates/P67DLWJP2GL7_DEVOPS.png",
     providerIconSize: 64,
@@ -315,8 +315,8 @@ export default function CertificationsSection() {
                   {/* Header with gradient - keeping this as requested */}
                   <div className={`h-20 flex items-center justify-between bg-slate-100 dark:bg-slate-900 px-4 ${cert.color} relative overflow-hidden`}>
                     <div className="flex items-center justify-end mr-4 gap-1">
-                      <Icon icon={cert.providerIcon} className="" width={cert.providerIconSize} height={cert.providerIconSize} />
-                      <span className="text-black dark:text-white text-sm font-bold">×</span>
+                      {/*<Icon icon={cert.providerIcon} className="" width={cert.providerIconSize} height={cert.providerIconSize} />*/}
+                      {/*<span className="text-black dark:text-white text-sm font-bold">×</span>*/}
                       <Icon icon={cert.platformIcon} className="" width={cert.platformIconSize} height={cert.platformIconSize} />
                     </div>
                     <div className="flex items-center justify-start gap-0">
