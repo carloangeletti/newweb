@@ -7,6 +7,64 @@ import SectionHeader from "./SectionHeader";
 
 const projects = [
   {
+    title: "Jago @humans.tech",
+    subtitle: "Raccontare l’arte nell’era digitale, creando un ponte tra l'artista, le sue opere e il pubblico.",
+    description: "Jago è tra gli artisti contemporanei più affermati e influenti a livello internazionale che opera nel campo della scultura. Riporta in auge le tecniche artistiche tradizionali, instaurando un rapporto diretto con il pubblico attraverso i social. Presenza digitale che andava rafforzata con un nuovo Sito Web semplice da navigare e sempre aggiornato",
+    features: [
+      "Esplorazione immersiva delle opere",
+      "Narrazione dell’artista",
+      "Sezione Discover per aggiornamenti e mostre",
+      "Integrazione con Jago Museum",
+      "Area Insiders per contenuti esclusivi"
+    ],
+    deliverables: [
+      "Sito web responsive e multilingua",
+      "CMS personalizzato per la gestione autonoma",
+      "Design UI/UX completo e adattivo",
+      "Ottimizzazione delle prestazioni",
+      "Configurazione di strumenti per il monitoraggio",
+      "Honorable Mention @AWWWARDS ed è vincitore dei CSS DESIGN AWARDS"
+    ],
+    tech: ["Wordpress", "Woocommerce", "SiteGround", "GSAP Animation"],
+    github: "https://humans.tech/storie-di-successo/jago/",
+    live: "https://jago.art/it/",
+    gradient: "from-black-500 to-cyan-500",
+    status: "Live",
+    category: "Web",
+    highlight: "Featured",
+    timeline: "Awards",
+    clientType: "Arte"
+  },
+  {
+    title: "AbCube @humans.tech",
+    subtitle: "AbCube è una piattaforma web di nuova generazione progettata per rendere la gestione degli edifici più efficiente.",
+    description: "AbCube è una piattaforma web di nuova generazione progettata per rendere la gestione degli edifici più efficiente e il coordinamento tra i vari attori più efficace. Con una struttura modulare e altamente configurabile, è in grado di adattarsi ad ogni processo e di supportare tutte le sfide dei complessi sistemi di gestione degli asset.",
+    features: [
+      "Sito istituzionale moderno e responsive",
+      "Design coerente con l’identità del brand",
+      "Architettura dei contenuti chiara e orientata alla conversione",
+      "Integrazione di sezioni dedicate a software, clienti e casi d’uso",
+      "Ottimizzazione SEO tecnica"
+    ],
+    deliverables: [
+      "Sito web responsive e multilingua",
+      "Design UI/UX personalizzato e adattato all’identità di AbCube",
+      "Sistema di gestione contenuti flessibile e facilmente aggiornabile",
+      "Ottimizzazione delle prestazioni",
+      "Configurazione di strumenti per il monitoraggio",
+      "Honorable Mention @AWWWARDS"
+    ],
+    tech: ["Wordpress", "Woocommerce", "Seeweb Hosting", "GSAP Animation"],
+    github: "#",
+    live: "https://abcube.tech",
+    gradient: "from-red-300 to-red-700",
+    status: "Live",
+    category: "Web",
+    highlight: "Featured",
+    timeline: "Awards",
+    clientType: "Software"
+  },
+  {
     title: "Vivi Ponza",
     subtitle: "Portale turistico e guida digitale di Ponza",
     description: "Il progetto Vivi Ponza© nasce con l’obiettivo di diventare il portale informativo di riferimento per il turismo a Ponza. Vogliamo offrire un servizio digitale innovativo e completamente gratuito, capace di mettere in contatto il turista con tutte le realtà locali presenti sull’isola.",
@@ -115,7 +173,7 @@ export default function ProjectsSection() {
 
   return (
     <motion.section
-      id="projects"
+      id="progetti"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.2 }}
@@ -269,13 +327,13 @@ export default function ProjectsSection() {
 
                     {/* Action Buttons */}
                     <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
-                      {project.title !== "Vivi Ponza" && (
+                      {!["Vivi Ponza", "AbCube @humans.tech"].includes(project.title) && (
                           <Link
                               href={project.github}
                               className="flex items-center justify-center gap-2 md:gap-3 px-4 py-2.5 md:px-6 md:py-3 bg-white/20 backdrop-blur-sm border border-white/30 text-white rounded-lg md:rounded-xl hover:bg-white/30 transition-all duration-300 text-sm font-medium shadow-lg hover:shadow-xl active:scale-95"
                           >
                             <Icon icon="solar:code-bold" width={18} height={18} className="md:w-5 md:h-5" />
-                            <span>View Repository</span>
+                            <span>Guarda il caso studio</span>
                           </Link>
                       )}
 
@@ -386,7 +444,8 @@ export default function ProjectsSection() {
           className="text-center mt-12 md:mt-16 lg:mt-20 px-4 mb-12"
         >
           <Link
-            href="#contact"
+            href="https://tidycal.com/carloangeletti/meet30"
+            target="_blank"
           >
 
             <motion.div
